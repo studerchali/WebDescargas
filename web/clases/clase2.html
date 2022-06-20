@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 2: Curso de Desarrollo web</title>
+    <link rel="stylesheet"  href="../../css/style.css" type="text/css">
+</head>
+
+<body>
+   
+        <header>
+          
+            <h1 class="subrayado">Clases de Desarrollo Web</h1>
+                <nav>
+                    <ul>
+                        <li><a href="../../index.html">Inicio</a></li>
+                    
+                        <li>Clases
+
+                            <ul>
+                                <li><a href="">Clase 0</a></li>
+                                <li><a href="">Clase 1</a></li>
+                                <li><a href="clase2.html">Clase 2</a></li>
+                                
+                            </ul>
+                        </li>
+                        <li><a href="">Material extra</a></li>
+                        <li><a href="..\contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+        </header>
+    
+
+    <main>
+    <!-- ----------------------------------------------------------------------------------------------LISTAS---------------------------------------------------------------------------------------------- -->
+    <!-- El <h1></h1> es para indicar titulos y subtitulos. Va desde <h1></h1> a <h6></h6> mientras mas alto el numero, mas chico el tamaño del subtitulo -->
+    <h1>Clase 2: Primeros pasos con HTML</h1>
+
+    <section>
+    
+    <h1 class="mayus">Listas</h1>
+    <!-- ---------------------------------------------------------------------------------------------- Listas ordenadas -->
+    <h2 class="subrayado">Listas ordenadas:</h2>
+    <ol>
+        <!-- <ol></ol> Ordered List, crea una lista ordenada por numeros -->
+        <!-- <li></li> List item, pone un item a la lista  -->
+        <li>Lista ordenada 1</li>
+        <li>Lista ordenada 2</li>
+        <li>Lista ordenada 3</li>
+    </ol>
+    <!-- ----------------------------------------------------------------------------------------------Listas desordenadas -->
+    <h2 class="subrayado">Listas desordenadas:</h2>
+    <ul>
+        <!-- <ul></ul> Unordered List, crea una lista desordenada, con viñetas -->
+        <li>Lista desordenada 1</li>
+        <li>Lista desordenada 2</li>
+        <li>Lista desordenada 3</li>
+    </ul>
+    <!-- ----------------------------------------------------------------------------------------------Listas de definicion -->
+    <h2 class="subrayado">Listas de definicion</h2>
+    <dl>
+        <!-- <dl></dl> Definition List, crea una lista de definiciones -->
+        <!-- <dt></dt> Definition Term, crea un termino a definir -->
+        <!-- <dd></dd> Definition Definition, crea la definicion del termino -->
+        <dt>Lista de definicion 1</dt>
+            <dd>Esto es un ejemplo de lista de definicion</dd>
+        <dt>Lista de definicion 2</dt>
+            <dd>Esto es un ejemplo de lista de definicion</dd>
+        <dt>Lista de definicion 3</dt>
+            <dd>Esto es un ejemplo de lista de definicion</dd>
+    </dl>
+
+    </section>
+<!-- ----------------------------------------------------------------------------------------------TABLAS---------------------------------------------------------------------------------------------- -->
+    <section>
+
+    <h1>Tablas</h1>
+    <!-- ----------------------------------------------------------------------------------------------Ejemplo 1 -->
+    <table cellspacing = 5 border="6">
+        <!-- El atributo "cellspacing" fija el espacio externo entre celdas en pixeles, por defecto el valor es 3. En este caso que dice cellpadding = 5 habra mas espacio entre distintas celdas -->
+        <!-- El atributo "border" reencuadra las celdas, mientras mayor numero mas grosor -->
+        <!-- El <caption></caption> Le pone un titulo a la tabla -->
+        <caption class="negrita" class="mayus" >Ejemplo 1 de tabla</caption>
+        <!-- <tr></tr> comienza una nueva fila de la tabla de izquierda a derecha -->
+        <!-- <td></td> son las celdas que se van agregando a la fila <tr></tr> -->
+        <tr> 
+            <!-- <th></th> Marca en negrita el encabezado de las columnas -->
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+        </tr>    
+        <tr>
+            <td>A1</td>
+            <td>A2</td>
+            <td>A3</td>
+        </tr>
+        <tr>
+            <td>B1</td>
+            <td>B2</td>
+            <td>B3</td>
+        </tr>
+        <tr>
+            <td>C1</td>
+            <td>C2</td>
+            <td>C3</td>
+        </tr>
+    </table>
+    <br/>
+    <!-- ----------------------------------------------------------------------------------------------Ejemplo 2 -->
+    <table cellpadding = 6 border="3">
+        <!-- El atributo "cellpadding" fija el espacio interno de una celda en pixeles, por defecto el valor es 3. En este caso que dice cellpadding = 5 habra mas espacio  -->
+        <caption>Ejemplo 2 de tabla</caption>
+        <tr>
+            <td>D1</td>
+            <td>D2</td>
+            <td>D3</td>
+        </tr>
+        <tr>
+            <td>E1</td>
+            <td>E2</td>
+            <td>E3</td>
+        </tr>
+        <tr>
+            <td>F1</td>
+            <td>F2</td>
+            <td>F3</td>
+        </tr>
+
+    </table>
+    </section>
+
+<!-- ----------------------------------------------------------------------------------------------FORMULARIOS---------------------------------------------------------------------------------------------- -->
+
+<section>
+
+<h1>Formularios</h1>
+<!-- <form></form> abre un nuevo formulario -->
+<form>
+    <h2>Ingreso de texto</h2>
+        <textarea rows="5" cols="15" placeholder="Texto largo aqui"></textarea><br/>
+        <!-- Abre un cuadro de varias lineas de texto. El tamaño esta definido por rows (filas) y cols (columnas). El atributo "placeholder" pone como un texto en el recuadro para ayudar a saber que hay que poner -->
+        <input type="text"      name="Inputtext"/> <br/>
+        <!-- Abre una linea de texto -->
+        <input type="email"     name="email" placeholder="xxxxxx@aaaaa.com"/><br/>
+        <!-- Abre una linea de texto que solo acepta el formato de mails -->
+        <input type="password"/><br/>
+        <!-- Abre una linea de texto para contraseñas, lo que se escriba se ve con puntitos -->
+    
+    <h2>Botones</h2>
+        <input type="submit"    value="Enviar formulario"/> <br/>
+        <!-- Crea un boton para enviar el formulario -->
+        <input type="reset"     value="Limpiar formulario"/>
+        <!-- Crea un boton para resetear los campos del formulario -->
+        <input type="button"    value="Sin acciones"/> <br/>
+        <!-- Crea un boton que supongo que es para programar con javascript. Mas adelante seguro tenga mas usos. -->
+    <br/>
+</form>
+  
+    <h2>Controles de seleccion</h2>
+<br/>
+        <h3 class ="subrayado">Botones de radio:</h3>
+            <form>
+                <!-- El input radio, crea multiples choice -->
+                <div>Hombre</div>
+                    <input type="radio" name="sexo" value="hombre" />
+                <div>Mujer</div>
+                    <input type="radio" name="sexo" value="mujer" />
+            </form>
+
+        <h3 class="mayus">Casillas de chequeo</h3>
+            <form>
+                <!-- El input checkbox, crea una cajita para tildar -->
+                <div>Acepta términos y condiciones</div>
+                    <input type="checkbox" name="acepta" value="1" />
+            </form>
+
+        <h3>Menu desplegable</h3>
+            <form>
+                <!-- El menu desplegable, crea un menu que lo clickeas y te abre varias opciones. Cada <option></option> es una opcion de la lista -->
+                <select name="Provincias">
+                <option value="TDF">Tierra del fuego</option>
+                <option value="CBA">Cordoba</option>
+                <option value="SDE">Santiago del Estero</option>
+                </select>
+            </form>
+            
+
+        <h3>Etiqueta "label"</h3>
+            <form>
+                <!-- La etiqueta label, Crea una etiqueta para el ingreso de la caja de texto. En el atributo "for" debe tener el atributo "name" del input -->
+                <label for="nombre_apellido">Nombre:</label>
+                <input type="text" name="nombre_apellido" />
+            </form>
+
+        <h3>Conjunto de campo</h3>
+            <form>
+                <fieldset>
+                <legend>Talle de remera</legend>
+                <!-- Aquí irán los elementos de formulario -->
+                </fieldset>
+            </form>
+
+</section>
+
+<section>
+<h1>Enlaces</h1>
+    <!-- Enlace a otra pagina dentro del mismo proyecto -->
+    <a href="proyecto.html">Link de prueba 1</a>
+    <br/>
+    <!-- Enlace a un archivo dentro de una carpeta -->
+    <a href="imagenes/mapa.jpg">Link que te lleva a una imagen</a>
+    <br/>
+    <!-- Enlace a un sitio web -->
+    <a href="http://www.coderhouse.com/frontend">Link que te lleva a un sitio web</a>
+    <br/>
+    <!-- Con estos enlaces se dirige a una seccion de la misma pagina -->
+    <a href="#pie">Ir al pie de página</a>
+    ...
+    <!-- <footer id="pie"></footer> -->
+    <br/>
+    <!-- Con estos enlaces + #seccion te podes dirigir a una seccion en especifico de alguna pagina -->
+    <a href="contacto.html#formulario">Formulario de contacto</a>
+    <br/>
+    <!-- Enlaces con imagenes o texto. En la etiqueta de cierre se pone "img src=" que es la ubicacion de la imagen que va a tener el link -->
+    <!-- En el atributo alt se puede escribir un texto quue aparecera. -->
+    <a href="http://www.coderhouse.com/cursos.html#frontend">Imagen
+        <img src="img/logo_coderhouse.png" alt="Logocoderhouse"/>
+    </a>
+    <br/>
+</section>
+
+<section>
+<h1>Material extra</h1>
+    <a href = "https://www.w3schools.com/html/default.asp">W3Schools - HTML Tutorial</a>
+    <br/>    
+    <a href = "https://developer.mozilla.org/es/docs/Web/HTML">HTML: Lenguaje de etiquetas de hipertexto</a>
+
+</section>
+
+</main>
+</body>
+
+
+
+<footer>
+
+
+</footer>
+
+</html>
